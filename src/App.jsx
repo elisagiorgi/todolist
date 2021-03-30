@@ -1,10 +1,17 @@
+import { HashRouter, Route, Switch } from "react-router-dom";
 import React from "react";
 import "./styles.css";
 import TodoApp from "./TodoApp";
 export default function App() {
   return (
-    <React.StrictMode>
-      <TodoApp />
-    </React.StrictMode>
+    <HashRouter>
+      <Route
+        render={({ location }) => (
+          <Switch location={location}>
+            <Route exact path="/" component={TodoApp} />
+          </Switch>
+        )}
+      />
+    </HashRouter>
   );
 }
