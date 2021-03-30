@@ -3,8 +3,8 @@ import "./styles.css";
 import TodoApp from "./TodoApp";
 export default function App() {
   return (
-    <div>
+    <React.StrictMode>
       <TodoApp />
-    </div>
+    </React.StrictMode>
   );
 }
