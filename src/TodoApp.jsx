@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuid } from "uuid";
-import DataEntry from "./DataEntry.js";
+import DataEntry from "./DataEntry";
 import "antd/dist/antd.css";
 
-import Todo from "./Todo.js";
+import Todo from "./Todo";
 import "./styles.css";
 
 const ToDoApp = () => {
@@ -14,7 +14,7 @@ const ToDoApp = () => {
     { id: uuid(), value: "Keep learning" },
     { id: uuid(), value: "Have a coffee" },
     { id: uuid(), value: "Climb a mountain", done: true },
-    { id: uuid(), value: "Read a book" }
+    { id: uuid(), value: "Read a book" },
   ]);
 
   const [hiddenAdd, setHiddenAdd] = useState(false);

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { Checkbox } from "antd";
-import DataEntry from "./DataEntry.js";
+import DataEntry from "./DataEntry";
 import "antd/dist/antd.css";
 
 import "./todo.css";
